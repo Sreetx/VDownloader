@@ -122,7 +122,7 @@ def youtubes():
             try:
                  print(merah+' [!] Pengunduh musik mungkin memiliki beberapa bug!'+reset )
                  yt.timeout = 300
-                 audio_stream = yt.streams.filter(audio_only=True, file_extension='mp4').first()
+                 audio_stream = yt.streams.filter(only_audio=True, file_extension='mp4').first()
                  print(hijau+' [~] Mengunduh Musikk....')
                  musik_url = audio_stream.url
                  nama_audio = yt.title
